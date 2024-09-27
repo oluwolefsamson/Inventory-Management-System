@@ -3,7 +3,7 @@ import { Container, Group, Anchor } from "@mantine/core";
 import classes from "../styles/FooterSimple.module.css";
 
 const links = [
-  { link: "https://github.com/oluwolefsamson", label: "Made by SamKODE" },
+  { link: "https://github.com/oluwolefsamson", label: "Made in 2024" },
 ];
 
 export default function FooterSimple() {
