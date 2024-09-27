@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: any) {
   const BACKEND_URL =
     env === "development"
       ? "http://localhost:3001"
-      : "https://invento-backend.onrender.com";
+      : "https://inventory-management-system-g5j8.onrender.com";
   const [modalOpened, modalHandler] = useDisclosure(false);
   const [modalText, setModalText] = useState("hello");
   const [loading, loadingHandler] = useDisclosure(false);
