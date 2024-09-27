@@ -16,7 +16,10 @@ import { useState } from "react";
 
 export default function App({ Component, pageProps }: any) {
   const env = process.env.NODE_ENV;
-  const BACKEND_URL = env === "development" ? "http://localhost:3001" : "https://invento-backend.onrender.com";
+  const BACKEND_URL =
+    env === "development"
+      ? "http://localhost:3001"
+      : "https://invento-backend.onrender.com";
   const [modalOpened, modalHandler] = useDisclosure(false);
   const [modalText, setModalText] = useState("hello");
   const [loading, loadingHandler] = useDisclosure(false);
@@ -34,14 +37,14 @@ export default function App({ Component, pageProps }: any) {
       loadingHandler.close();
     }
   }
-  
+
   return (
     <MantineProvider defaultColorScheme="dark" theme={theme}>
       <Head>
-        <title>invento</title>
+        <title>SamKode Inventory</title>
         <link
           rel="icon"
-          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏨</text></svg>"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>SK</text></svg>"
         />
         <meta
           name="description"
